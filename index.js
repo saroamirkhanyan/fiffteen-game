@@ -34,7 +34,6 @@ new Vue({
         move(e) {
             if (this.isFinished) return;
             switch (e.keyCode) {
-                //ARROW RIGHT
                 case ARROW_RIGHT:
                     this.moveRight()
                     break;
