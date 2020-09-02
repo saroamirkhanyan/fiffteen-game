@@ -14,3 +14,4 @@ function divideIntoParts(arr, part) {
     }
     return result;
 }
+

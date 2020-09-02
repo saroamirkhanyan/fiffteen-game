@@ -99,7 +99,7 @@ new Vue({
             this.board = board;
         },
         shuffleBoard() {
-            let board = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, null]
+            let board = this.board.flat(1)
             board = shuffle(board)
             board = divideIntoParts(board, 4)
             this.board = board;
