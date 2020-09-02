@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="./index.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- app -->
+        <div id="app">
+            <h1 v-if="isFinished">Դուք հաղթեցիք</h1>
+            <!-- board -->
+            <div class="board">
+                <div class="row" v-for="row of board">
+                    <div :class="figure ? 'figure' : '' " v-for="figure of row">
+                        {{figure}}
+                    </div>
+                </div>
+            </div>
+            <!-- Suffle the board figures -->
+            <button @click="shuffleBoard">Սկսել Նորից</button>
+        </div>
+
+        <script src="lib.js"></script>
+        <!-- Vue.js -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

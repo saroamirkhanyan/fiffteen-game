@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #10adc6;
+}
+
+.board {
+    background: #07acc6;
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+    grid-gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.figure {
+    background: #0fb1ca;
+    font-size: 50px;
+    line-height: 80px;
+    text-align: center;
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+h1 {
+    text-align: center;
+    font-size: xxx-larger;
+}
+
+div#app {
+    text-align: center;
+}
+
+button {
+    background: #17a2b8;
+    border: none;
+    padding: 10px 16px;
+    color: inherit;
+    border-radius: 15px;
+    font-size: 26px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+button:active {
+    opacity: 0.5;
+}
