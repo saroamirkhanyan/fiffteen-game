@@ -16,7 +16,9 @@ new Vue({
     computed: {
         //check is finished
         isFinished() {
-            const mergedBoard = this.board.flat(1).filter(f => f !== null)
+            const flatedBoard = this.board.flat(1);
+            if(flatedBoard[flatedBoard.length - 1] != null) return;
+            const mergedBoard = flatedBoard.filter(f => f !== null)
             for (let i = 0; i < mergedBoard.length - 1; i++) {
                 if (mergedBoard[i] + 1 !== mergedBoard[i + 1]) return false;
             }
